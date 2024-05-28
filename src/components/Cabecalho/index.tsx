@@ -1,9 +1,10 @@
-import styles from './Cabecalho.module.css'
+import React, { ReactNode } from 'react'
+import { Titulo } from './Cabecalho'
 
-const Cabecalho = () => (
-  <header className={styles.cabecalho}>
-    <h1>EBAC Jobs</h1>
-  </header>
-)
+type Props = {
+  children: ReactNode
+}
+
+const Cabecalho = ({ children }: Props) => <Titulo>{children} </Titulo>
 
 export default Cabecalho

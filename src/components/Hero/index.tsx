@@ -1,13 +1,17 @@
-import styles from './Hero.module.css'
+import React from 'react'
+import { HeroContainer, Overlay, Content, Title } from './Hero'
 
 const Hero = () => (
-  <form className={styles.form}>
-    <div className="container">
-      <h2 className={styles.heroTitle}>
-        As melhores vagas para tecnologia, design e artes visuais.
-      </h2>
-    </div>
-  </form>
+  <HeroContainer>
+    <Overlay />
+    <Content>
+      <div className="container">
+        <Title>
+          As melhores vagas para tecnologia, design e artes visuais.
+        </Title>
+      </div>
+    </Content>
+  </HeroContainer>
 )
 
 export default Hero
